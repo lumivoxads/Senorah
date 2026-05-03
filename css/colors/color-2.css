@@ -333,15 +333,15 @@ p.copyright a {
 }
 .form-dark input:focus:required:invalid,
 .form-dark textarea:focus:required:invalid {
-  color: var(--jet-black);
+  color: var(--pure-white);
 }
 .form-dark input:required:valid,
 .form-dark textarea:required:valid {
-  color: var(--jet-black);
+  color: var(--pure-white);
 }
 .form-dark input, .form-dark textarea {
   border-bottom: 1px solid var(--platinum-gray);
-  color: var(--jet-black);
+  color: var(--pure-white);
 }
 .form-dark input:focus, .form-dark textarea:focus {
   border-bottom: 1px solid var(--premium-gold);
