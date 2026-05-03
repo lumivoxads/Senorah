@@ -1902,7 +1902,7 @@ form .inputs-description {
 }
 .intro__header .logo img {
   width: auto;
-  max-width: 250px;
+  max-width: 160px;
   height: auto;
   filter: invert(1);
   mix-blend-mode: screen;
