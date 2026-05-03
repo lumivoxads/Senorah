@@ -135,7 +135,7 @@
               <!-- Navigation Controls Start - Visible on Mobile -->
               <div class="menu__controls">
                 <a href="#0" id="menu-close" class="menu-close section-close" aria-label="Menu Close Button">
-                  <i class="fa-solid fa-xmark"></i>
+                  <i class="fa fa-times"></i>
                 </a>
               </div>
               <!-- Navigation Controls End - Visible on Mobile -->
@@ -227,7 +227,7 @@
               <!-- Stay-in-touch Controls Start -->
               <div class="stayintouch__controls">
                 <a class="button-square button-outline-dark section-close" href="#0" id="stayintouch-close">
-                  <i class="fa-solid fa-xmark"></i>
+                  <i class="fa fa-times"></i>
                 </a>
               </div>
               <!-- Stay-in-touch Controls End -->
@@ -309,7 +309,7 @@
             <!-- Section Controls Start -->
             <div class="section-inner__controls">
               <a class="button-square button-outline-dark section-close inner-close" href="#0" id="about-close">
-                <i class="fa-solid fa-arrow-left"></i>
+                <i class="fa fa-chevron-left"></i>
               </a>
             </div>
             <!-- Section Controls End -->
@@ -320,7 +320,7 @@
               <!-- Section Content Block Title Start -->
               <div class="content-block">
                 <h2 class="inner__title">About us</h2>
-                <p class="inner__text">I wonder if I've been changed in the night? Let me think. Was I the same when I got up this morning? I almost think I can remember feeling a little different. But if I'm not the same, the next question is 'Who in the world am I?' Ah, that's the great puzzle!</p>
+                <p class="inner__text">We’re building something precise, bold, and unapologetically powerful. SENORAH is not just a brand — it’s a statement of identity, command, and visual authority. The first drop is in motion. Limited. Intentional. No repeats.</p>
               </div>
               <!-- Section Content Block Title End -->
 
@@ -409,27 +409,7 @@
               </div>
               <!-- Section Content Block Features End -->
 
-              <!-- Section Content Block Blockquote Start -->
-              <div class="content-block blockquote">
-                <div class="container-fluid p-0">
-                  <div class="row g-0">
-                    <div class="col-12">
-                      <div class="blockquote__container">
-                        <div class="color-layer color-layer-medium"></div>
-                        <blockquote cite="">
-                          <i class="fa-solid fa-quote-right light"></i>
-                          <p class="light">My dear, here we must run as fast as we can, just to stay in place. And if you wish to go anywhere you must run twice as fast as that.</p>
-                          <cite class="light">
-                            <span>Lewis Carroll</span>
-                            <span>Alice in Wonderland</span>
-                          </cite>
-                        </blockquote>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Section Content Block Blockquote End -->
+              
 
             </div>
             <!-- Section Container End -->
@@ -448,7 +428,7 @@
 
             <div class="section-inner__controls">
               <a class="button-square button-outline-dark section-close inner-close" href="#0" id="works-close">
-                <i class="fa-solid fa-arrow-left"></i>
+                <i class="fa fa-chevron-left"></i>
               </a>
             </div>
 
@@ -550,7 +530,7 @@
             <!-- Section Controls Start -->
             <div class="section-inner__controls">
               <a class="button-square button-outline-dark section-close inner-close" href="#0" id="contact-close">
-                <i class="fa-solid fa-arrow-left"></i>
+                <i class="fa fa-chevron-left"></i>
               </a>
             </div>
             <!-- Section Controls End -->
@@ -625,19 +605,7 @@
               </div>
               <!-- Section Content Block Contact Form End -->
 
-              <!-- Section Content Block Google Map Start -->
-              <div class="content-block map">
-                <div id="google-map">
-                  <div id="google-container"></div>
-                  <div id="zoom-in">
-                    <i class="fa-solid fa-plus button-icon"></i>
-                  </div>
-                  <div id="zoom-out">
-                    <i class="fa-solid fa-minus button-icon"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- Section Content Block Google Map End -->
+              
 
             </div>
             <!-- Section Container End -->
@@ -657,7 +625,7 @@
             <!-- Notify Controls Start -->
             <div class="notify__controls">
               <a class="button-square button-outline-light section-close" href="#0" id="notify-close">
-                <i class="fa-solid fa-xmark"></i>
+                <i class="fa fa-times"></i>
               </a>
             </div>
             <!-- Notify Controls End -->
@@ -792,10 +760,30 @@
     <script src="js/maps/map-mono.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNMDtmEsvSevM4ztfsbhLfLNZhKHCvWXk"></script>
     <!-- Load Scripts End -->
+    <script>
+    function sendToWhatsApp(e, formId) {
+        e.preventDefault();
+        const form = document.getElementById(formId);
+        const formData = new FormData(form);
+        let message = "*New inquiry from Senorah Website:*\n\n";
+        for (let [key, value] of formData.entries()) {
+            if (key !== "project_name" && key !== "admin_email" && key !== "form_subject") {
+                message += `*${key}:* ${value}\n`;
+            }
+        }
+        const whatsappUrl = `https://wa.me/919113898526?text=${encodeURIComponent(message)}`;
+        window.open(whatsappUrl, "_blank");
+    }
+
+    document.getElementById("contact-form").onsubmit = (e) => sendToWhatsApp(e, "contact-form");
+    document.getElementById("stayintouch-form").onsubmit = (e) => sendToWhatsApp(e, "stayintouch-form");
+    document.getElementById("notify-form").onsubmit = (e) => sendToWhatsApp(e, "notify-form");
+    </script>
+
 
   
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <a href="https://wa.me/919113898526" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
       <i class="fa-brands fa-whatsapp"></i>
     </a>
 </body>
