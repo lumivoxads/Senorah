@@ -164,7 +164,7 @@
 
               <p class="headline__description">We’re building something precise, bold, and unapologetically powerful. Not just products — a statement of identity.</p>
               <div class="headline__btnholder">
-                <a href="#" class="button button-solid-light" id="notify-trigger">
+                <a href="https://wa.me/919113898526?text=✨%20Interested%20in%20Senorah.%20Please%20notify%20me%20about%20the%20launch." target="_blank" class="button button-solid-light">
                   <span class="button-caption">Notify me</span>
                 </a>
               </div>
@@ -260,6 +260,9 @@
                             <input class="transition-el transition-el-3" type="email" name="E-mail" placeholder="Email Address*" required>
                           </div>
                           <div class="col-12">
+                            <input class="transition-el transition-el-3" type="tel" name="Mobile" placeholder="Mobile Number*" required>
+                          </div>
+                          <div class="col-12">
                             <textarea class="transition-el transition-el-4" name="Message" placeholder="Your Message*" required></textarea>
                           </div>
                           <div class="col-12">
@@ -326,8 +329,8 @@
                     <div class="col-12 col-md-6 bg-medium">
                       <div class="feature__descr">
                         <img src="img/features/axio-icon-1.svg" alt="Axio Template Feature Icon">
-                        <h3>Eye catching design</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere massa.</p>
+                        <h3>Bold Identity</h3>
+                        <p>We create statements, not just products. A new standard in visual authority.</p>
                       </div>
                     </div>
                   </div>
@@ -339,8 +342,8 @@
                     <div class="col-12 col-md-6 bg-dark">
                       <div class="feature__descr">
                         <img src="img/features/axio-icon-2.svg" alt="Axio Template Feature Icon">
-                        <h3 class="light">Trendy colors and fonts</h3>
-                        <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere massa.</p>
+                        <h3 class="light">Precision Design</h3>
+                        <p class="light">Every detail is intentional. Meticulously crafted for those who command presence.</p>
                       </div>
                     </div>
                   </div>
@@ -352,8 +355,8 @@
                     <div class="col-12 col-md-6 bg-light">
                       <div class="feature__descr">
                         <img src="img/features/axio-icon-3.svg" alt="Axio Template Feature Icon">
-                        <h3>Smooth section  transitions</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere massa.</p>
+                        <h3>Powerful Expression</h3>
+                        <p>Unapologetically powerful aesthetics that resonate with strength and control.</p>
                       </div>
                     </div>
                   </div>
@@ -365,8 +368,8 @@
                     <div class="col-12 col-md-6 bg-medium">
                       <div class="feature__descr">
                         <img src="img/features/axio-icon-4.svg" alt="Axio Template Feature Icon">
-                        <h3>Custom Google maps</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere massa.</p>
+                        <h3>Curated Selection</h3>
+                        <p>Limited drops. Intentional pieces. No repeats in our pursuit of excellence.</p>
                       </div>
                     </div>
                   </div>
@@ -378,8 +381,8 @@
                     <div class="col-12 col-md-6 bg-dark">
                       <div class="feature__descr">
                         <img src="img/features/axio-icon-5.svg" alt="Axio Template Feature Icon">
-                        <h3 class="light">Ready to use contact forms</h3>
-                        <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere massa.</p>
+                        <h3 class="light">Instant Connection</h3>
+                        <p class="light">Direct access to our team. We value precision in communication as much as design.</p>
                       </div>
                     </div>
                   </div>
@@ -391,8 +394,8 @@
                     <div class="col-12 col-md-6 bg-light">
                       <div class="feature__descr">
                         <img src="img/features/axio-icon-6.svg" alt="Axio Template Feature Icon">
-                        <h3>Totally responsive layout</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere massa.</p>
+                        <h3>Fluid Authority</h3>
+                        <p>Seamless experience across all platforms. Senorah is wherever you are.</p>
                       </div>
                     </div>
                   </div>
@@ -532,15 +535,10 @@
               <!-- Section Content Block Title Start -->
               <div class="content-block margin-bottom-s">
                 <h2 class="inner__title">Get in touch</h2>
-                <p class="inner__text">You can call us or leave a request here.
-                  We are always glad to see you in our office from
-                  <span>9:00</span>
-                  to
-                  <span>18:00</span>.
-                  Contact us via phone:
-                  <span><a href="tel:+12127089400">+1 212-708-9400</a></span>
-                  or email:
-                  <span><a href="mailto:example@example.com?subject=Message%20from%20your%20site">example@example.com</a></span>
+                <p class="inner__text">Drop us a line to discuss your bold statement. 
+                  We are building something precise, bold, and unapologetically powerful. 
+                  Reach out via WhatsApp: 
+                  <span><a href="https://wa.me/919113898526">+91 9113898526</a></span>
                 </p>
               </div>
               <!-- Section Content Block Title End -->
@@ -756,12 +754,14 @@
         e.preventDefault();
         const form = document.getElementById(formId);
         const formData = new FormData(form);
-        let message = "*New inquiry from Senorah Website:*\n\n";
+        let message = "✨ *New Inquiry - SENORAH Website*\n\n";
         for (let [key, value] of formData.entries()) {
             if (key !== "project_name" && key !== "admin_email" && key !== "form_subject") {
                 message += `*${key}:* ${value}\n`;
             }
         }
+        message += "\n---";
+        message += "\nSent from Senorah Landing Page";
         const whatsappUrl = `https://wa.me/919113898526?text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, "_blank");
     }

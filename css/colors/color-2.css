@@ -483,3 +483,31 @@ p.copyright a {
 /* ------------------------------------------------*/
 /* Stay-in-touch Screen Colors End */
 /* ------------------------------------------------*/
+/* ------------------------------------------------*/
+/* Section Inner Dark Theme Start */
+/* ------------------------------------------------*/
+.section-inner {
+  background-color: var(--jet-black);
+}
+.inner__title {
+  color: var(--pure-white) !important;
+}
+.inner__text, .inner__text a {
+  color: var(--platinum-gray) !important;
+}
+.inner-trigger, .section-close i {
+  color: var(--pure-white);
+}
+.button-outline-dark {
+  border: 2px solid var(--pure-white);
+  color: var(--pure-white);
+}
+.section-inner .bg-light, .section-inner .bg-medium {
+  background-color: var(--charcoal);
+}
+.section-inner h3 {
+  color: var(--pure-white);
+}
+/* ------------------------------------------------*/
+/* Section Inner Dark Theme End */
+/* ------------------------------------------------*/
