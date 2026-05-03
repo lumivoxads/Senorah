@@ -1897,15 +1897,13 @@ form .inputs-description {
 
 .intro__header {
   position: relative;
-  margin-top: 3rem;
+  margin-top: 2.5rem;
   padding: 0 3rem;
 }
 .intro__header .logo img {
   width: auto;
   max-width: 250px;
   height: auto;
-  margin-top: -25px;
-  margin-bottom: -25px;
   filter: invert(1);
   mix-blend-mode: screen;
 }
@@ -1916,7 +1914,7 @@ form .inputs-description {
 }
 @media only screen and (min-width: 1400px) {
   .intro__header {
-    margin-top: 4rem;
+    margin-top: 3.5rem;
     padding: 0 6rem;
   }
 }
