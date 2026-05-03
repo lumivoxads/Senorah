@@ -47,7 +47,7 @@
 }
 
 .media-3 {
-  background-image: url("../img/backgrounds/1600x1200-bg-c2-01.webp");
+  background-image: url("../img/Hero.png");
 }
 
 .media-4 {
@@ -176,7 +176,7 @@ body {
   position: relative;
   min-width: 320px;
   overflow-x: hidden !important;
-  font: normal 400 1.4rem/1.7 "Montserrat", sans-serif;
+  font: normal 400 1.4rem/1.7 "Inter", sans-serif;
   background-color: #fff;
   color: #313637;
 }
@@ -1902,6 +1902,12 @@ form .inputs-description {
 }
 .intro__header .logo img {
   width: auto;
+  max-width: 250px;
+  height: auto;
+  margin-top: -25px;
+  margin-bottom: -25px;
+  filter: invert(1);
+  mix-blend-mode: screen;
 }
 @media only screen and (min-width: 768px) {
   .intro__header {
@@ -3146,3 +3152,31 @@ form .inputs-description {
 /* ------------------------------------------------*/
 /* Gallery Custom Styles End */
 /* ------------------------------------------------*/
+/* ------------------------------------------------*/
+/* WhatsApp Floating Button */
+/* ------------------------------------------------*/
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 120px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  z-index: 1000;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none !important;
+}
+
+.whatsapp-float:hover {
+  background-color: var(--premium-gold);
+  color: var(--jet-black);
+  transform: scale(1.1);
+}

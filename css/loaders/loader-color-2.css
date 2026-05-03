@@ -28,7 +28,7 @@
   bottom: 0;
   left: 0;
   z-index: 1000;
-  background-color: #004488;
+  background-color: var(--jet-black, #0D0D0D);
   opacity: 1;
   visibility: visible;
   -webkit-transition: visibility 0.4s 0s, opacity 0.4s, background-color 0.6s ease-in-out;
@@ -37,7 +37,7 @@
   transition: visibility 0.4s 0s, opacity 0.4s, background-color 0.6s ease-in-out;
 }
 .loader.fade-dark {
-  background-color: #002b55;
+  background-color: var(--jet-black, #0D0D0D);
 }
 .loader.loaded {
   opacity: 0;
@@ -66,6 +66,8 @@
   display: block;
   width: 100%;
   height: auto;
+  filter: invert(1);
+  mix-blend-mode: screen;
 }
 
 .loader__caption {

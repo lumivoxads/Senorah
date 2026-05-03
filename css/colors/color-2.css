@@ -36,27 +36,37 @@
 /* ------------------------------------------------*/
 /* Basic Color Options Start */
 /* ------------------------------------------------*/
+
+:root {
+  --jet-black: #0D0D0D;
+  --charcoal: #1F1F1F;
+  --platinum-gray: #E6E6E6;
+  --pure-white: #FFFFFF;
+  --premium-gold: #C9A45C;
+  --silver: #A6A6A6;
+}
+
 ::-moz-selection {
-  background-color: #feee5b;
-  color: #070707;
+  background-color: var(--premium-gold);
+  color: var(--jet-black);
   text-shadow: none;
 }
 ::selection {
-  background-color: #feee5b;
-  color: #070707;
+  background-color: var(--premium-gold);
+  color: var(--jet-black);
   text-shadow: none;
 }
 
 ::-webkit-scrollbar {
-  background: #00478f;
+  background: var(--charcoal);
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #00478f;
+  background-color: var(--charcoal);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #fee715;
+  background-color: var(--premium-gold);
 }
 
 html {
@@ -64,104 +74,104 @@ html {
 }
 
 body {
-  color: #444;
-  background-color: #ffffff;
+  color: var(--platinum-gray);
+  background-color: var(--pure-white);
 }
 
 h1 {
-  color: #ffffff;
+  color: var(--pure-white);
 }
 
 .headline__subtitle {
-  color: #ffffff;
+  color: var(--pure-white);
 }
 
 .headline__description {
-  color: #ffffff;
+  color: var(--pure-white);
 }
 
 h2 {
   color: silver;
 }
 h2::after {
-  background-color: #feec44;
+  background-color: var(--premium-gold);
 }
 
 h3 {
-  color: #070707;
+  color: var(--jet-black);
 }
 h3.light {
-  color: #ffffff;
+  color: var(--pure-white);
 }
 
 h4 {
-  color: #070707;
+  color: var(--jet-black);
 }
 h4.light {
-  color: #ffffff;
+  color: var(--pure-white);
 }
 
 a {
-  color: #070707;
+  color: var(--jet-black);
 }
 a.light {
-  color: #ffffff;
+  color: var(--pure-white);
 }
 .no-touch a:hover {
   color: #6699cc;
 }
 .no-touch a:hover.light {
-  color: #fef173;
+  color: var(--premium-gold);
 }
 
 p {
-  color: #070707;
+  color: var(--jet-black);
 }
 p.light {
-  color: #ffffff;
+  color: var(--pure-white);
 }
 p.copyright {
   color: rgba(255, 255, 255, 0.6);
 }
 p.copyright a {
-  color: #ffffff;
+  color: var(--pure-white);
 }
 .no-touch p.copyright a:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 
 .aside__title {
-  color: #ffffff;
+  color: var(--pure-white);
 }
 
 .aside__text {
-  color: #ffffff;
+  color: var(--pure-white);
 }
 
 .popup__title {
-  color: #070707;
+  color: var(--jet-black);
 }
 .popup__title.light {
-  color: #ffffff;
+  color: var(--pure-white);
 }
 
 .popup__subtitle {
-  color: #444;
+  color: var(--platinum-gray);
 }
 .popup__subtitle.light {
   color: rgba(255, 255, 255, 0.8);
 }
 
 .clip .words-wrapper::after {
-  background-color: #fee715;
+  background-color: var(--premium-gold);
 }
 
 .section-main {
-  background-color: #fee715;
+  background-color: var(--premium-gold);
 }
 
 .section-main__intro {
-  background-color: #0055aa;
+  background-color: var(--jet-black);
 }
 
 .color-layer-medium {
@@ -173,15 +183,15 @@ p.copyright a {
 }
 
 .bg-light {
-  background-color: #f2f2f2;
+  background-color: var(--charcoal);
 }
 
 .bg-medium {
-  background-color: #fee715;
+  background-color: var(--premium-gold);
 }
 
 .bg-dark {
-  background-color: #0055aa;
+  background-color: var(--jet-black);
 }
 
 /* ------------------------------------------------*/
@@ -191,7 +201,7 @@ p.copyright a {
 /* Menu Colors Start */
 /* ------------------------------------------------*/
 .menu {
-  background-color: #004d99;
+  background-color: var(--charcoal);
 }
 @media only screen and (min-width: 1200px) {
   .menu {
@@ -200,17 +210,17 @@ p.copyright a {
 }
 
 .navigation li a {
-  color: #ffffff;
+  color: var(--pure-white);
 }
 .no-touch .navigation li:hover a {
-  color: #fee92c;
+  color: var(--premium-gold);
 }
 
 .menu-close {
-  border: 2px solid #ffffff;
+  border: 2px solid var(--pure-white);
 }
 .menu-close i {
-  color: #ffffff;
+  color: var(--pure-white);
 }
 
 /* ------------------------------------------------*/
@@ -223,10 +233,10 @@ p.copyright {
   color: rgba(255, 255, 255, 0.6);
 }
 p.copyright a {
-  color: #ffffff;
+  color: var(--pure-white);
 }
 .no-touch p.copyright a:hover {
-  color: #feec44;
+  color: var(--premium-gold);
 }
 
 /* ------------------------------------------------*/
@@ -236,7 +246,7 @@ p.copyright a {
 /* Main Section Aside Colors Start */
 /* ------------------------------------------------*/
 .section-main__aside {
-  background-color: #0055aa;
+  background-color: var(--jet-black);
   background-repeat: repeat;
   background-position: top left;
 }
@@ -247,10 +257,10 @@ p.copyright a {
 /* Socials Colors Start */
 /* ------------------------------------------------*/
 .socials li a {
-  color: #ffffff;
+  color: var(--pure-white);
 }
 .no-touch .socials li a:hover {
-  color: #feec44;
+  color: var(--premium-gold);
 }
 
 /* ------------------------------------------------*/
@@ -260,47 +270,47 @@ p.copyright a {
 /* Buttons & Triggers Colors Start */
 /* ------------------------------------------------*/
 .button-solid-light {
-  background-color: #fee715;
-  border: 2px solid #fee715;
-  color: #070707;
+  background-color: var(--premium-gold);
+  border: 2px solid var(--premium-gold);
+  color: var(--jet-black);
 }
 .no-touch .button-solid-light:hover {
   background-color: transparent;
-  color: #ffffff;
-  border: 2px solid #ffffff;
+  color: var(--pure-white);
+  border: 2px solid var(--pure-white);
 }
 
 .button-solid-dark {
-  background-color: #0d5eae;
-  border: 2px solid #0d5eae;
-  color: #ffffff;
+  background-color: var(--charcoal);
+  border: 2px solid var(--charcoal);
+  color: var(--pure-white);
 }
 .no-touch .button-solid-dark:hover {
   background-color: transparent;
-  border: 2px solid #0d5eae;
-  color: #070707;
+  border: 2px solid var(--charcoal);
+  color: var(--jet-black);
 }
 
 .button-outline-light {
   background-color: transparent;
-  color: #ffffff;
-  border: 2px solid #ffffff;
+  color: var(--pure-white);
+  border: 2px solid var(--pure-white);
 }
 .no-touch .button-outline-light:hover {
-  background-color: #fee715;
-  border: 2px solid #fee715;
-  color: #070707;
+  background-color: var(--premium-gold);
+  border: 2px solid var(--premium-gold);
+  color: var(--jet-black);
 }
 
 .button-outline-dark {
   background-color: transparent;
-  border: 2px solid #2c2c2c;
-  color: #070707;
+  border: 2px solid var(--premium-gold);
+  color: var(--pure-white);
 }
 .no-touch .button-outline-dark:hover {
-  background-color: #0d5eae;
-  border: 2px solid #0d5eae;
-  color: #ffffff;
+  background-color: var(--premium-gold);
+  border: 2px solid var(--premium-gold);
+  color: var(--jet-black);
 }
 
 /* ------------------------------------------------*/
@@ -323,21 +333,21 @@ p.copyright a {
 }
 .form-dark input:focus:required:invalid,
 .form-dark textarea:focus:required:invalid {
-  color: #070707;
+  color: var(--jet-black);
 }
 .form-dark input:required:valid,
 .form-dark textarea:required:valid {
-  color: #070707;
+  color: var(--jet-black);
 }
 .form-dark input, .form-dark textarea {
-  border-bottom: 1px solid #444;
-  color: #070707;
+  border-bottom: 1px solid var(--platinum-gray);
+  color: var(--jet-black);
 }
 .form-dark input:focus, .form-dark textarea:focus {
-  border-bottom: 1px solid #fee715;
+  border-bottom: 1px solid var(--premium-gold);
 }
 .form-dark .inputs-description {
-  color: #444;
+  color: var(--platinum-gray);
 }
 
 .form-light ::-webkit-input-placeholder {
@@ -358,39 +368,39 @@ p.copyright a {
 }
 .form-light input:focus:required:invalid,
 .form-light textarea:focus:required:invalid {
-  color: #ffffff;
+  color: var(--pure-white);
 }
 .form-light input:required:valid,
 .form-light textarea:required:valid {
-  color: #ffffff;
+  color: var(--pure-white);
 }
 .form-light input, .form-light textarea {
-  border-bottom: 1px solid #ffffff;
-  color: #ffffff;
+  border-bottom: 1px solid var(--pure-white);
+  color: var(--pure-white);
 }
 .form-light input:focus, .form-light textarea:focus {
-  border-bottom: 1px solid #fee92c;
+  border-bottom: 1px solid var(--premium-gold);
 }
 .form-light .inputs-description {
   color: rgba(255, 255, 255, 0.6);
 }
 
 .reply-group__icon {
-  color: #fee715;
+  color: var(--premium-gold);
 }
 .reply-group__icon.light {
-  color: #fee92c;
+  color: var(--premium-gold);
 }
 
 .reply-group__title {
-  color: #070707;
+  color: var(--jet-black);
 }
 .reply-group__title.light {
-  color: #ffffff;
+  color: var(--pure-white);
 }
 
 .reply-group__text {
-  color: #444;
+  color: var(--platinum-gray);
 }
 .reply-group__text.light {
   color: rgba(255, 255, 255, 0.8);
@@ -403,24 +413,24 @@ p.copyright a {
 /* PhotoSwipe Gallery Colors Start */
 /* ------------------------------------------------*/
 .my-gallery__descr {
-  color: #070707;
+  color: var(--jet-black);
 }
 .my-gallery__descr::after {
-  background-color: #ffffff;
+  background-color: var(--pure-white);
 }
 
 .pswp__caption__center h4 {
-  color: #ffffff;
+  color: var(--pure-white);
 }
 .pswp__caption__center h4 small {
-  color: #ffffff;
+  color: var(--pure-white);
 }
 .pswp__caption__center p {
-  color: #ffffff;
+  color: var(--pure-white);
 }
 
 .pswp__counter {
-  color: #ffffff;
+  color: var(--pure-white);
 }
 
 .pswp__bg {
@@ -428,7 +438,7 @@ p.copyright a {
 }
 
 .pswp__button--close {
-  background-color: #fee715;
+  background-color: var(--premium-gold);
 }
 
 /* ------------------------------------------------*/
@@ -438,11 +448,11 @@ p.copyright a {
 /* Google Map Controls Colors Start */
 /* ------------------------------------------------*/
 #zoom-in, #zoom-out {
-  background-color: #fee715;
-  color: #070707;
+  background-color: var(--premium-gold);
+  color: var(--jet-black);
 }
 .no-touch #zoom-in:hover, .no-touch #zoom-out:hover {
-  background-color: #feee5b;
+  background-color: var(--premium-gold);
 }
 
 /* ------------------------------------------------*/
@@ -452,7 +462,7 @@ p.copyright a {
 /* Notify Screen Colors Start */
 /* ------------------------------------------------*/
 .notify {
-  background-color: #004d99;
+  background-color: var(--charcoal);
 }
 
 /* ------------------------------------------------*/
@@ -462,7 +472,7 @@ p.copyright a {
 /* Stay-in-touch Screen Colors Start */
 /* ------------------------------------------------*/
 .stayintouch {
-  background-color: #004d99;
+  background-color: var(--charcoal);
 }
 @media only screen and (min-width: 1200px) {
   .stayintouch {
